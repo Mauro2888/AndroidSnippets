@@ -1,0 +1,13 @@
+public static void alertDialogShow(Context ctx, String messaggio)
+        {
+            final AlertDialog alertDialog = new AlertDialog.Builder(ctx).create();
+            alertDialog.setMessage(message);
+            alertDialog.setButton("Fatto", new DialogInterface.OnClickListener() 
+            {
+                public void onClick(DialogInterface dialog, int which) 
+                {
+                    alertDialog.dismiss();
+              } 
+            }); 
+            alertDialog.show();
+        }
